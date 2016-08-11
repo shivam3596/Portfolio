@@ -1,0 +1,6 @@
+<h1>{{ mysite }} </h1>
+<ul>
+	{% for my in mysite.my_set.all %}
+		<li><a href="/my/{{mysite.id}}/my/{{my.id}}">{{my}}</a></li>
+	{% endfor %}
+</ul>

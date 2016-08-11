@@ -1,0 +1,196 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>Shivam Kumar Chauhan</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{% static 'css/style.css' %}" rel="stylesheet"></link>
+<link href="{% static 'css/animate.css' %}" rel="stylesheet" media="all"></link>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script>
+	 new WOW().init();
+</script>
+</head>
+<body class="bg" >
+
+		<ul class="back" >
+			<a href="#academics">
+				<li class="lite wow fadeInDown" data-wow-delay="0.5s" >
+					<img class="bulb"  src="{% static 'img/study.png' %}"></img>
+					<p class="big5 blocks">Academics</p>
+				</li>
+			</a>
+
+			<a href="#projects">
+				<li class="lite wow fadeInDown" data-wow-delay="0.3s">
+					<img class="bulb"  src="{% static 'img/cirtificate.png' %}"></img>
+					<p class="big5 blocks">Projects</p>
+				</li>
+			</a>
+
+			<a href="#profile">
+				<li class="lite wow fadeInDown" data-wow-delay="0.1s">
+					<img class="wow pulse" data-wow-delay="1.0s"  id="dp" src="{% static 'img/profile.jpg' %}"></img>
+					<p class="big5 blocks">@shivam3596</p>
+				</li>
+			</a>
+
+			<a href="#skills">
+				<li class="lite wow fadeInDown" data-wow-delay="0.3s">
+					<img class="bulb"  src="{% static 'img/skill.png' %}"></img>
+					<p class="big5 blocks">Skills</p>
+				</li>
+			</a>
+
+			<a href="#contact">
+				<li class="lite wow fadeInDown" data-wow-delay="0.5s">
+					<img class="bulb"  src="{% static 'img/contact.png' %}"></img>
+					<p class="big5 blocks">Contact me</p>
+				</li>
+			</a>
+		</ul>
+
+	<div class="profile" id="profile">
+		<div class="snow">
+			<p class="big2">Shivam Kumar Chauhan</p>
+		</div>
+
+		<div class="left-side snow wow fadeInUp">
+			<p class="big4" >
+				A 20 year old <b class="show">web developer | Tech-enthusiast | Programmer </b>... and a great human being.
+				<b class="show">Computer science</b> student at MIET. <b class="show">Coding | exploring world | learning new technologies </b> are my interests.
+				<b class="show">Playing PC games, Blogging, </b> ... are things i usually do.<br>
+				I love to listen other's ideas & believe in <b class="show">Talk less < work more</b>.
+			</p>
+			<a href="{% static 'css/shivamcv.pdf' %}" target="_blank"><button class="download">Download CV </button></a>
+		</div>
+		<div class="right-side wow fadeInUp">
+			<p class="big3 snow">Web Developer, Tech-Enthusiast</p>
+			<p class="big4 snow" style="text-align:center;">Birth Date - 03.05.1996<br>Mobile : 7830963823</p>
+			<p class="big4 snow" style="text-align:center;">Email ID: shivamchauhan3596@gmail.com </p>
+		</div>
+	</div>
+
+	<div class="bada">
+		<center><p class="big3" id="academics">Academics</p></center>
+		<div class="academics snow wow fadeInUp" data-wow-delay="0.3s">
+
+		<button class="download year">2013 - 2017</button>
+			<p class="big4">B.Tech, Computer Science & Engineering</p>
+			<p class="big4">Meerut Institute of Engineering and Technology</p>
+			<p class="big4">Activities and Participation -</p>
+			<p class="big4">ANIMIET animation, SIEED quiz competition, Mental calisthenics Event </p>
+		</div>
+
+		<div class="academics snow wow fadeInUp" data-wow-delay="0.3s">
+		<button class="download year">2012 - 2013</button>
+			<p class="big4">INTERMEDIATE(10+2)</p>
+			<p class="big4">Sarasvati vidhya mandir, Muzaffarnagar</p>
+			<p class="big4">83.80% in UP Board	</p>
+
+		</div>
+		<div class="academics snow wow fadeInUp " data-wow-delay="0.3s">
+		<button class="download year">2010 - 2011</button>
+			<p class="big4">HIGH SCHOOL</p>
+			<p class="big4">Sarasvati vidhya mandir, Muzaffarnagar</p>
+			<p class="big4">73.60% in UP Board	</p>
+		</div>
+	</div>
+	<div class="skills snow" id="skills">
+		<p class="big3">Skills</p>
+		<img class="myskill" src="{% static 'img/graph.png' %}" width="1000" height="400" alt="skills">
+	</div>
+
+	<center><p class="big3" id="projects">Projects</p></center>
+	<div class="projects">
+	<ul>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/Gesture-opencv" target="_blank">
+				<div class="title"> Gesture-opencv</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/opencv.png' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="http://oldstuff.in/" target="_blank">
+				<div class="title"> Oldstuff</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/oldstuff.jpg' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/bootstrapinfo" target="_blank">
+				<div class="title">Bootstrapinfo</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/bootstrapinfo.jpg' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/Google-chrome-extension" target="_blank">
+				<div class="title"> Chrome extension</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/extension.png' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/portfolio" target="_blank">
+				<div class="title">My Portfolio</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/myportfolio.jpg' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/scrapy-web" target="_blank" >
+				<div class="title">Scrapy-web</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/scrapy.png' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/homeshine" target="_blank" >
+				<div class="title">HomeShine | NGO </div>
+			</a>
+			<img class="snapshot" src="{% static 'img/ngo.png' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/weather_report" target="_blank" >
+				<div class="title">Weather Report </div>
+			</a>
+			<img class="snapshot" src="{% static 'img/weather.png' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/isatoria" target="_blank" >
+				<div class="title">Isatoria</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/isatoria.jpg' %}"></img>
+		</li>
+		<li class="container snow wow zoomIn" data-wow-delay="0.3s">
+			<a href="https://github.com/shivam3596/cv-gen" target="_blank" >
+				<div class="title">cv-gen</div>
+			</a>
+			<img class="snapshot" src="{% static 'img/cvgen.png' %}"></img>
+		</li>
+	</ul>
+	</div>
+
+	<div class="contact" id="contact">
+		<p class="big5">Leave a Message...</p><br>
+			<form method="POST" action="my/congo.html/">{% csrf_token %}
+				<p class="big5"><label for="id_subject">Name</label></p>
+					<input id="id_subject" class="form-control" type="text" name="subject" required ></input>
+				<p class="big5"><label for="id_sender">Email</label></p>
+					<input id="id_sender" class="form-control" type="email" name="sender" ></input>
+				<p class="big5"><label for="id_message">Message</label></p>
+					<textarea id="id_message" class="message" type="text" rows="5" cols="175" name="message" required></textarea>
+				<p class="big5"><label for="id_cc_myself">cc myself</label>
+					<input id="id_cc_myself" type="checkbox" name="cc_myself" ></input></p>
+				<button type="submit" class="download wow shake" data-wow-delay="0.3s">Submit</button>
+			</form>
+		<div class="social">
+			<ul>
+				<a href="https://www.facebook.com/shivam.k.chauhan1" target="_blank"><li class="icon"> <img src="{% static 'img/facebook.png' %}" class="soso"></img></li></a>
+				<a href="https://github.com/shivam3596" target="_blank"><li class="icon"> <img src="{% static 'img/Github.png' %}" class="soso"></img></li></a>
+				<a href="http://w3chauhan.blogspot.in/" target="_blank"><li class="icon"> <img src="{% static 'img/blog.png' %}" class="soso" ></img></li></a>
+				<a href="https://in.linkedin.com/in/shivam-kumar-chauhan-563391a8" target="_blank"><li class="icon"> <img src="{% static 'img/Linked.png' %}" class="soso"></img></li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		View projects on Github | Read my Blog | @W3chauhan
+	</div>
+</body>
+</html>

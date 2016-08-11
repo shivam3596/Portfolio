@@ -1,0 +1,18 @@
+<h1>{{ my }}</h1>
+
+<p>Due date: {{my.due_date}}</p>
+
+<form action="/my/{{mysite.id}}/my/{{my.id}}/update/" method="post">
+	{% csrf_token %}
+	
+	<label form="complete">is complete</label>
+	{% if my.complete %}
+		<input type="checkbox" name="complete" id="complete" checked />
+	{% else %}
+		<input type="checkbox" name="complete" id="complete" />
+	{% endif %}
+	<br><br>
+	
+	<input type="submit" value="update"/>
+	
+</form>

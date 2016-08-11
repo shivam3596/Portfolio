@@ -1,0 +1,9 @@
+{% if mysites %}
+	<ul>
+		{% for mysite in mysites %}
+			<li><a href="/my/{{mysite.id}}/">{{mysite.name}}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+		<p>No mysites are available.</p>
+{% endif %}		
